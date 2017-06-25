@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<link rel="stylesheet" href="https://media.ccconline.org/ccco/2015Master/BasicStylesCCCO.css" type="text/css">
+<title>Module Assignment Instructions</title>
+</head>
+<body>
+<h1>Chapter 13 Programming Assignment  (Version 1)</h1>
+<h2>Overview</h2>
+<p>This assignment relates to content from Chapter 13 of the eText. </p>
+<h2>Instructions</h2>
+<ol>
+  <li>Review the General Programming Assignment instructions.</li>
+  <li><strong>Do not change anything in the supplied Ch13_Ex11_MainProgram.cpp  except to add documentation and your name</strong>. </li>
+  <li>Please  use the file names listed below since your file will have the following  components:<br />
+    <strong>Ch13_Ex11_MainProgram.cpp</strong><strong>&nbsp;</strong><em>- given file</em>  <br />
+    <blockquote>
+      <p>#include &lt;iostream&gt; <br />
+        #include &quot;myArray.h&quot;</p>
+      <p>using namespace std;</p>
+      <p>int main()<br />
+        { <br />
+        myArray list1(5);<br />
+        myArray list2(5);</p>
+      <p> int i;</p>
+      <p>cout &lt;&lt; &quot;list1 : &quot;;<br />
+        for (i = 0 ; i &lt; 5; i++)<br />
+        cout &lt;&lt; list1[i] &lt;&lt;&quot;  &quot;;<br />
+        cout&lt;&lt; endl;</p>
+      <p>cout &lt;&lt; &quot;Enter 5 integers:  &quot;;<br />
+        for (i = 0 ; i &lt; 5; i++)<br />
+        cin &gt;&gt; list1[i];<br />
+        cout &lt;&lt; endl;</p>
+      <p>cout &lt;&lt; &quot;After filling list1:  &quot;;</p>
+      <p>    for (i = 0 ; i &lt; 5; i++)<br />
+        cout &lt;&lt; list1[i] &lt;&lt;&quot;  &quot;;<br />
+        cout&lt;&lt; endl;</p>
+      <p>    list2 = list1;<br />
+        cout &lt;&lt; &quot;list2 : &quot;;<br />
+        for (i = 0 ; i &lt; 5; i++)<br />
+        cout &lt;&lt; list2[i] &lt;&lt;&quot;  &quot;;<br />
+        cout&lt;&lt; endl;</p>
+      <p>    cout &lt;&lt; &quot;Enter 3 elements:  &quot;;</p>
+      <p>    for (i = 0; i &lt; 3; i++)<br />
+        cin &gt;&gt; list1[i];<br />
+        cout &lt;&lt; endl;</p>
+      <p>cout &lt;&lt; &quot;First three elements of  list1: &quot;;<br />
+        for (i = 0; i &lt; 3; i++)<br />
+        cout &lt;&lt; list1[i] &lt;&lt; &quot;  &quot;;<br />
+        cout &lt;&lt; endl;</p>
+      <p>myArray list3(-2, 6);</p>
+      <p>cout &lt;&lt; &quot;list3: &quot;;<br />
+        for (i = -2 ; i &lt; 6; i++)<br />
+        cout &lt;&lt; list3[i] &lt;&lt;&quot;  &quot;;<br />
+        cout&lt;&lt; endl;</p>
+      <p>    list3[-2] = 7;<br />
+        list3[4] = 8;<br />
+        list3[0] = 54;<br />
+        list3[2] = list3[4] + list3[-2];</p>
+      <p>    cout &lt;&lt; &quot;list3: &quot;;<br />
+        for  (i = -2 ; i &lt; 6; i++)<br />
+        cout &lt;&lt; list3[i] &lt;&lt;&quot;  &quot;;<br />
+        cout&lt;&lt; endl;<br />
+        system(&quot;pause&quot;);</p>
+      <p>    return 0;<br />
+        }<br />
+        <strong>myArray.h</strong> <br />
+        <strong>myArrayImp.cpp</strong></p>
+    </blockquote>
+  Recall that in C++, there is no check on an array index out  of bounds. However, during program execution, an array index out of bounds can  cause serious problems. Also, in C++, the array index starts at 0. </li>
+  <li>Design and implement the class myArray that solves the array  index out of bounds problem and also allows the user to begin the array index  starting at any integer, positive or negative.<br />
+    <br />
+<ol>
+  <li type="a">Every object of type myArray is  an array of type int. During execution, when accessing an array component, if  the index is out of bounds, the program must terminate with an appropriate  error message. Consider the following statements:<br />
+      myArray  list(5);                                   //Line  1 <br />
+      myArray  myList(2, 13);                      //Line  2 <br />
+      myArray  yourList(-5, 9);                     //Line  3
+      <p>The  statement in Line 1 declares list to be an array of 5 components, the component  type is int, and the components are: list[0], list[1], ..., list[4]; the  statement in Line 2 declares myList to be an array of 11 com- ponents, the  component type is int, and the components are: myList[2], myList[3], ...,  myList[12]; the statement in Line 3 declares yourList to be an array of 14  components, the component type is int, and the components are: yourList[-5],  yourList[-4], ..., yourList[0], ..., yourList[8].<br />
+  </p>
+  </li>
+</ol>
+  </li>
+  <li>Write a program to test the  class myArray.</li>
+</ol>
+<p>See the <em>Schedule</em> and <em>Grading and Evaluation</em> pages in the <em>Syllabus</em> Module for due dates and grading information.</p>
+</body>
+</html>

@@ -1,8 +1,7 @@
 /*
-Kerrigan Taiga
+https://github.com/Kavex/
 06/03/2017
 Module 01 Chapter 10 Swimming Pool
-https://github.com/Kavex/CCConline
 */
 #pragma once
 

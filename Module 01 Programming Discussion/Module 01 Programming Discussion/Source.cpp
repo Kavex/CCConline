@@ -1,5 +1,5 @@
 /*
-Kerrigan Taiga
+https://github.com/Kavex/
 6/9/17
 Module 01 Programming Discussion
 Chapter 10: Exercise 11
