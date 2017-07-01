@@ -1,0 +1,4 @@
+﻿  Source.cpp
+h:\git\ccconline\module 02 programming discussion\module 02 programming discussion\source.cpp(44): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Module 02 Programming Discussion.vcxproj -> H:\Git\CCConline\Module 02 Programming Discussion\Debug\Module 02 Programming Discussion.exe
+  Module 02 Programming Discussion.vcxproj -> H:\Git\CCConline\Module 02 Programming Discussion\Debug\Module 02 Programming Discussion.pdb (Partial PDB)
